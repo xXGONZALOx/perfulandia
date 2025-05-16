@@ -8,7 +8,7 @@ import java.util.Date;
 
 
 @Entity
-@Table("clienteee")
+@Table //("clienteee")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,8 +18,6 @@ public class cliente {
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-@Column(unique = true, length =  = 13, nullable=false)
-    private  String nombre;
 
 
 }
