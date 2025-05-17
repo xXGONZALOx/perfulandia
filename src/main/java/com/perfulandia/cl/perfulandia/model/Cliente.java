@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 
 @Entity
 @Table //("clienteee")
@@ -14,17 +16,15 @@ public class Cliente {
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-
-    private Long id;
-
+private Integer id;
+    @Column(unique = true, length =  13, nullable = false )
+    private String run;
+    @Column(nullable = false)
     private String nombre;
+    @Column(nullable = false)
     private String apellido;
+    @Column(nullable = false)
     private String email;
-    private String contraseña;
-
-
-
-
-
+    @Column(nullable = true)
+    private Date fechaNacimieto;
 }
