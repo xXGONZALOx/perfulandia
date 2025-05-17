@@ -4,15 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 
 @Entity
 @Table //("clienteee")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class cliente {
+public class Cliente {
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +22,8 @@ public class cliente {
     private String apellido;
     private String email;
     private String contraseña;
+
+
 
 
 
