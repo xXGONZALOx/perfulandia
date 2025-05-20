@@ -1,5 +1,6 @@
 package com.perfulandia.cl.perfulandia.repository;
 
+<<<<<<< Updated upstream
 
 import com.perfulandia.cl.perfulandia.model.Cliente;
 
@@ -20,4 +21,14 @@ public interface ClienteRepository extends  JpaRepository<Cliente, Long> {
 
 
 
+=======
+import com.perfulandia.cl.perfulandia.model.Cliente;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ClienteRepository {
+
+    
+>>>>>>> Stashed changes
 }
