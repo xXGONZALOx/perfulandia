@@ -17,8 +17,8 @@ import java.util.List;
 @Repository
 public interface ClienteRepository extends  JpaRepository<Cliente, Long> {
 
-    @Query( value = "SELECT p FROM Cliente WHERE email = : email", nativeQuery = true)
-    Cliente buscarPorEmail(@Param("email") String);
+    @Query( value = "SELECT p FROM Cliente WHERE email = :email", nativeQuery = true)
+    Cliente buscarPorEmail(@Param("email") String email);
 
 
 }
