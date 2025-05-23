@@ -54,7 +54,7 @@ public class ClienteController {
             cli.setApellido(cliente.getApellido());
             cli.setFechaNacimieto(cliente.getFechaNacimieto());
             cli.setEmail(cliente.getEmail());
-            clienteService.save(cli); // Asegúrate de tener este método
+            clienteService.save(cli);
             return ResponseEntity.ok(cli);
         } catch (Exception e) {
             return ResponseEntity.notFound().build();
