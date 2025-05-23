@@ -52,7 +52,7 @@ public class ClienteController {
             cli.setRun(cliente.getRun());
             cli.setNombre(cliente.getNombre());
             cli.setApellido(cliente.getApellido());
-            cli.setFechaNacimieto(cliente.getFechaNacimieto());
+            cli.setFechaNacimiento(cliente.getFechaNacimiento());
             cli.setEmail(cliente.getEmail());
             clienteService.save(cli);
             return ResponseEntity.ok(cli);

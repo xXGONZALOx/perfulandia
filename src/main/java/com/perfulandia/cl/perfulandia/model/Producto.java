@@ -1,19 +1,17 @@
 package com.perfulandia.cl.perfulandia.model;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Entity
-@Table
+@Table(name = "producto")
 @Data
 @NoArgsConstructor
-
-
-
+@AllArgsConstructor
 public class Producto {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -22,7 +20,6 @@ public class Producto {
     private String descripcion;
     private double precio;
     private int stock;
-    
-
 
 }
+

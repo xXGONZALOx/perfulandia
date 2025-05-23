@@ -30,7 +30,9 @@ private Integer id;
     @Column(nullable = false)
     private String email;
     @Column(nullable = true)
-    private Date fechaNacimieto;
+    @Temporal(TemporalType.DATE)
+    @com.fasterxml.jackson.annotation.JsonFormat(pattern = "yyyy-MM-dd")
+    private Date fechaNacimiento;
 }
 
 
